@@ -1,0 +1,4716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sri Gayathri Skin Care Hospital | Rajahmundry</title>
+
+<meta name="description"
+content="Sri Gayathri Skin Care Hospital in Rajahmundry provides professional skin, hair and cosmetic dermatology care.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+    --blue:#0d4f9c;
+    --blue2:#0a3470;
+    --blue3:#1671c8;
+    --green:#16865a;
+    --green2:#0b6d48;
+    --gold:#d8a62a;
+
+    --ink:#18324b;
+    --muted:#607080;
+
+    --cream:#f8fbf9;
+    --light-blue:#f3f8fc;
+
+    --line:#e7edf0;
+
+    --shadow:0 18px 55px rgba(18,54,84,.12);
+
+    --radius:25px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background:#fff;
+}
+
+
+/* =========================================================
+   MAIN SITE
+========================================================= */
+
+.sgsh-site{
+    font-family:'DM Sans',Arial,sans-serif;
+    color:var(--ink);
+    background:#fff;
+    line-height:1.7;
+    overflow:hidden;
+}
+
+.sgsh-site *{
+    box-sizing:border-box;
+}
+
+.sgsh-container{
+    width:min(92%,1220px);
+    margin:auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.sgsh-header{
+    position:sticky;
+    top:0;
+    z-index:9999;
+
+    background:rgba(255,255,255,.88);
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(13,79,156,.08);
+
+    box-shadow:
+        0 8px 30px rgba(20,60,90,.06);
+
+    transition:.3s;
+}
+
+.sgsh-nav{
+    min-height:82px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:25px;
+}
+
+.sgsh-logo img{
+    width:205px;
+    max-height:68px;
+    object-fit:contain;
+    display:block;
+
+    transition:.3s;
+}
+
+.sgsh-logo img:hover{
+    transform:scale(1.03);
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.sgsh-menu{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.sgsh-menu a{
+    position:relative;
+
+    text-decoration:none;
+    color:#25445e;
+
+    font-weight:600;
+
+    padding:10px 13px;
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.sgsh-menu a:not(.sgsh-btn)::after{
+    content:"";
+
+    position:absolute;
+
+    left:13px;
+    right:13px;
+    bottom:5px;
+
+    height:2px;
+
+    background:var(--gold);
+
+    transform:scaleX(0);
+    transform-origin:center;
+
+    transition:.3s;
+}
+
+.sgsh-menu a:hover{
+    color:var(--blue);
+    background:#f3f8fc;
+}
+
+.sgsh-menu a:hover::after{
+    transform:scaleX(1);
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.sgsh-btn{
+    display:inline-flex !important;
+
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    padding:13px 23px !important;
+
+    border-radius:999px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--blue),
+            var(--blue3)
+        );
+
+    color:#fff !important;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    box-shadow:
+        0 10px 25px rgba(13,79,156,.22);
+
+    transition:.35s;
+
+    border:none;
+}
+
+.sgsh-btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 15px 32px rgba(13,79,156,.30);
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--blue2),
+            var(--blue)
+        );
+}
+
+.sgsh-btn:active{
+    transform:translateY(-1px);
+}
+
+.sgsh-btn-gold{
+    background:
+        linear-gradient(
+            135deg,
+            #d29a19,
+            #edc85d
+        ) !important;
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.sgsh-menu-toggle{
+    display:none;
+
+    font-size:30px;
+    cursor:pointer;
+
+    color:var(--blue);
+
+    padding:8px;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.sgsh-menu-toggle:hover{
+    background:#eef6fb;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.sgsh-hero{
+    position:relative;
+
+    background:
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(216,166,42,.16),
+            transparent 24%
+        ),
+
+        linear-gradient(
+            135deg,
+            #eff9f7,
+            #edf6fc 55%,
+            #fff
+        );
+
+    padding:105px 0 95px;
+
+    overflow:hidden;
+}
+
+.sgsh-hero::before,
+.sgsh-hero::after{
+    content:"";
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(2px);
+
+    pointer-events:none;
+}
+
+.sgsh-hero::before{
+    width:360px;
+    height:360px;
+
+    right:-150px;
+    top:-150px;
+
+    background:rgba(22,134,90,.12);
+
+    animation:heroCircle 8s ease-in-out infinite;
+}
+
+.sgsh-hero::after{
+    width:240px;
+    height:240px;
+
+    left:-130px;
+    bottom:-130px;
+
+    background:rgba(13,79,156,.10);
+
+    animation:heroCircle 7s ease-in-out infinite reverse;
+}
+
+@keyframes heroCircle{
+
+    0%,100%{
+        transform:translate(0,0);
+    }
+
+    50%{
+        transform:translate(15px,20px);
+    }
+}
+
+.sgsh-hero-content{
+    display:grid;
+
+    grid-template-columns:
+        1.08fr
+        .92fr;
+
+    align-items:center;
+
+    gap:65px;
+
+    position:relative;
+
+    z-index:1;
+}
+
+
+/* =========================================================
+   HERO TEXT
+========================================================= */
+
+.sgsh-small-title{
+    display:inline-flex;
+
+    color:#b37b00;
+
+    font-size:14px;
+
+    font-weight:800;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    background:rgba(216,166,42,.12);
+
+    padding:8px 13px;
+
+    border-radius:999px;
+
+    animation:fadeDown .8s ease both;
+}
+
+.sgsh-hero h1{
+    font-family:'Playfair Display',Georgia,serif;
+
+    font-size:clamp(45px,6vw,72px);
+
+    line-height:1.05;
+
+    color:var(--blue2);
+
+    margin:20px 0 18px;
+
+    letter-spacing:-1.5px;
+
+    animation:fadeUp .9s ease .1s both;
+}
+
+.sgsh-hero h1 span{
+    color:var(--green);
+}
+
+.sgsh-hero p{
+    font-size:18px;
+
+    color:var(--muted);
+
+    max-width:650px;
+
+    animation:fadeUp .9s ease .2s both;
+}
+
+.sgsh-hero-buttons{
+    margin-top:32px;
+
+    display:flex;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+    animation:fadeUp .9s ease .3s both;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.sgsh-hero-image{
+    position:relative;
+
+    text-align:center;
+
+    animation:fadeIn 1s ease .3s both;
+}
+
+.sgsh-hero-image::before{
+    content:"";
+
+    position:absolute;
+
+    inset:8% -3% -3% 8%;
+
+    border-radius:35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(22,134,90,.18),
+            rgba(216,166,42,.14)
+        );
+
+    transform:rotate(4deg);
+
+    z-index:-1;
+}
+
+.sgsh-hero-image img{
+    width:100%;
+
+    max-width:500px;
+
+    aspect-ratio:1/1.02;
+
+    object-fit:cover;
+
+    border-radius:32px;
+
+    box-shadow:var(--shadow);
+
+    animation:
+        floatImage 5s ease-in-out infinite;
+
+    transition:.5s;
+}
+
+.sgsh-hero-image img:hover{
+    transform:scale(1.02);
+}
+
+@keyframes floatImage{
+
+    0%,100%{
+        transform:translateY(0) rotate(0);
+    }
+
+    50%{
+        transform:translateY(-10px) rotate(.6deg);
+    }
+}
+
+
+/* =========================================================
+   COMMON ANIMATIONS
+========================================================= */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.sgsh-section{
+    padding:95px 0;
+
+    position:relative;
+}
+
+.sgsh-section-title{
+    text-align:center;
+
+    margin-bottom:55px;
+}
+
+.sgsh-section-title h2{
+    font-family:'Playfair Display',Georgia,serif;
+
+    color:var(--blue2);
+
+    font-size:clamp(34px,4vw,48px);
+
+    line-height:1.15;
+
+    margin:0 0 12px;
+}
+
+.sgsh-section-title h2 span{
+    color:var(--green);
+}
+
+.sgsh-section-title p{
+    color:var(--muted);
+
+    max-width:720px;
+
+    margin:auto;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.sgsh-about{
+    background:
+        linear-gradient(
+            180deg,
+            #f8fcfa,
+            #fff
+        );
+}
+
+.sgsh-about-grid{
+    display:grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap:70px;
+
+    align-items:center;
+}
+
+.sgsh-about-image{
+    position:relative;
+}
+
+.sgsh-about-image::after{
+    content:"";
+
+    position:absolute;
+
+    inset:auto -18px -18px 18px;
+
+    height:75%;
+
+    background:#e5f3ee;
+
+    border-radius:30px;
+
+    z-index:0;
+}
+
+.sgsh-about-image img{
+    position:relative;
+
+    z-index:1;
+
+    width:100%;
+
+    max-height:530px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:.5s;
+}
+
+.sgsh-about-image img:hover{
+    transform:translateY(-5px);
+}
+
+.sgsh-about-text h3{
+    font-family:'Playfair Display',Georgia,serif;
+
+    font-size:34px;
+
+    color:var(--blue2);
+
+    margin-top:0;
+}
+
+.sgsh-about-text p{
+    color:var(--muted);
+}
+
+.sgsh-check{
+    margin:14px 0;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+.sgsh-check span{
+    display:grid;
+
+    place-items:center;
+
+    width:27px;
+    height:27px;
+
+    border-radius:50%;
+
+    background:#e5f6ed;
+
+    color:var(--green);
+
+    font-size:16px;
+
+    margin:0;
+}
+
+
+/* =========================================================
+   DOCTOR
+========================================================= */
+
+/* =====================================================
+   PREMIUM DOCTOR SECTION
+===================================================== */
+
+.sgsh-doctor-section {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(38, 166, 154, 0.07),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(13, 79, 156, 0.07),
+            transparent 30%
+        );
+}
+
+
+/* -----------------------------------------
+   SECTION HEADING
+----------------------------------------- */
+
+.sgsh-doctor-heading {
+    max-width: 760px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.sgsh-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 16px;
+
+    border-radius: 50px;
+
+    background: rgba(38, 166, 154, 0.08);
+
+    color: #168276;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    margin-bottom: 16px;
+}
+
+.sgsh-doctor-heading h2 {
+    margin-bottom: 14px;
+}
+
+.sgsh-doctor-heading h2 span {
+    color: var(--blue);
+}
+
+.sgsh-doctor-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #64748b;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* -----------------------------------------
+   DOCTOR CARD
+----------------------------------------- */
+
+.sgsh-doctor-card {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 65px;
+
+    align-items: center;
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding: 55px;
+
+    border-radius: 32px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border: 1px solid rgba(13, 79, 156, 0.09);
+
+    box-shadow:
+        0 25px 70px rgba(20, 60, 90, 0.10);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+.sgsh-doctor-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 35px 85px rgba(20, 60, 90, 0.16);
+}
+
+
+/* Decorative glow */
+
+.sgsh-doctor-glow {
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(38, 166, 154, 0.12),
+            transparent 70%
+        );
+
+    top: -150px;
+    left: -120px;
+
+    pointer-events: none;
+}
+
+
+/* -----------------------------------------
+   DOCTOR PHOTO
+----------------------------------------- */
+
+.sgsh-doctor-photo-wrap {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 390px;
+
+    margin: auto;
+
+    padding: 18px;
+
+}
+
+
+/* Decorative photo background */
+
+.sgsh-doctor-photo-bg {
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(38, 166, 154, 0.18),
+            rgba(13, 79, 156, 0.12)
+        );
+
+    transform:
+        rotate(-5deg)
+        scale(0.96);
+
+    transition:
+        transform 0.6s
+        cubic-bezier(.22,1,.36,1);
+}
+
+
+.sgsh-doctor-card:hover
+.sgsh-doctor-photo-bg {
+
+    transform:
+        rotate(-8deg)
+        scale(1);
+}
+
+
+/* Actual photo */
+
+.sgsh-doctor-photo {
+
+    position: relative;
+
+    aspect-ratio: 4 / 5;
+
+    overflow: hidden;
+
+    border-radius: 26px;
+
+    background: #eef6f6;
+
+    border: 6px solid white;
+
+    box-shadow:
+        0 20px 45px rgba(20, 60, 90, 0.15);
+}
+
+
+.sgsh-doctor-photo img {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    transition:
+        transform 0.8s
+        cubic-bezier(.22,1,.36,1);
+}
+
+
+.sgsh-doctor-card:hover
+.sgsh-doctor-photo img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* -----------------------------------------
+   DOCTOR BADGE
+----------------------------------------- */
+
+.sgsh-doctor-badge {
+
+    position: absolute;
+
+    right: -5px;
+    bottom: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 17px;
+
+    background: rgba(255,255,255,0.95);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.8);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 12px 30px rgba(20,60,90,0.14);
+
+    animation:
+        sgshBadgeFloat 4s ease-in-out infinite;
+}
+
+
+.sgsh-badge-icon {
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e5f7f2;
+
+    color: #168276;
+
+    font-weight: 800;
+
+}
+
+
+.sgsh-doctor-badge strong {
+
+    display: block;
+
+    color: #17324d;
+
+    font-size: 13px;
+
+}
+
+
+.sgsh-doctor-badge small {
+
+    display: block;
+
+    margin-top: 2px;
+
+    color: #718096;
+
+    font-size: 10px;
+
+}
+
+
+@keyframes sgshBadgeFloat {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+}
+
+
+/* -----------------------------------------
+   DOCTOR INFORMATION
+----------------------------------------- */
+
+.sgsh-doctor-info {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.sgsh-doctor-label {
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #168276;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.sgsh-doctor-info h3 {
+
+    margin: 0 0 14px;
+
+    color: #17324d;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: clamp(30px, 4vw, 44px);
+
+    line-height: 1.15;
+}
+
+
+.sgsh-doctor-degree {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+
+    color: var(--blue);
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+
+.sgsh-degree-line {
+
+    width: 28px;
+    height: 1px;
+
+    background: #a9b9c8;
+}
+
+
+.sgsh-doctor-speciality {
+
+    margin-bottom: 16px;
+
+    color: #334e68;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+
+.sgsh-doctor-description {
+
+    max-width: 600px;
+
+    color: #66788a;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+}
+
+
+/* -----------------------------------------
+   HIGHLIGHTS
+----------------------------------------- */
+
+.sgsh-doctor-highlights {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin: 28px 0;
+}
+
+
+.sgsh-doctor-highlight {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px;
+
+    border-radius: 15px;
+
+    background: #f7fbfb;
+
+    border: 1px solid rgba(38,166,154,0.08);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.sgsh-doctor-highlight:hover {
+
+    transform: translateY(-4px);
+
+    background: #f0faf8;
+}
+
+
+.sgsh-highlight-icon {
+
+    flex: 0 0 auto;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: white;
+
+    color: #168276;
+
+    box-shadow:
+        0 5px 15px rgba(20,60,90,0.07);
+
+}
+
+
+.sgsh-doctor-highlight strong {
+
+    display: block;
+
+    color: #29465d;
+
+    font-size: 12px;
+
+}
+
+
+.sgsh-doctor-highlight small {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: #7a8b99;
+
+    font-size: 10px;
+
+}
+
+
+/* -----------------------------------------
+   CONSULTATION BUTTON
+----------------------------------------- */
+
+.sgsh-doctor-btn {
+
+    display: inline-flex !important;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px 21px !important;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.sgsh-doctor-btn:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+.sgsh-btn-arrow {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.18);
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+.sgsh-doctor-btn:hover
+.sgsh-btn-arrow {
+
+    transform: translateX(4px);
+
+}
+
+
+/* -----------------------------------------
+   TABLET
+----------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .sgsh-doctor-card {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 40px;
+
+        padding: 40px;
+
+    }
+
+    .sgsh-doctor-photo-wrap {
+
+        max-width: 330px;
+
+    }
+
+    .sgsh-doctor-info {
+
+        text-align: center;
+
+    }
+
+    .sgsh-doctor-description {
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .sgsh-doctor-highlights {
+
+        text-align: left;
+
+    }
+
+}
+
+
+/* -----------------------------------------
+   MOBILE
+----------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .sgsh-doctor-heading {
+
+        margin-bottom: 35px;
+
+    }
+
+    .sgsh-doctor-heading p {
+
+        font-size: 14px;
+
+    }
+
+    .sgsh-doctor-card {
+
+        padding: 28px 20px;
+
+        border-radius: 24px;
+
+        gap: 30px;
+
+    }
+
+    .sgsh-doctor-photo-wrap {
+
+        max-width: 280px;
+
+        padding: 12px;
+
+    }
+
+    .sgsh-doctor-photo {
+
+        border-radius: 20px;
+
+    }
+
+    .sgsh-doctor-badge {
+
+        right: -8px;
+
+        bottom: 22px;
+
+        padding: 9px 12px;
+
+    }
+
+    .sgsh-badge-icon {
+
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .sgsh-doctor-info h3 {
+
+        font-size: 29px;
+
+    }
+
+    .sgsh-doctor-speciality {
+
+        font-size: 15px;
+
+    }
+
+    .sgsh-doctor-description {
+
+        font-size: 14px;
+
+    }
+
+    .sgsh-doctor-highlights {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .sgsh-doctor-btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+}
+
+
+/* -----------------------------------------
+   REDUCED MOTION
+----------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .sgsh-doctor-card,
+    .sgsh-doctor-photo img,
+    .sgsh-doctor-photo-bg,
+    .sgsh-doctor-highlight,
+    .sgsh-doctor-btn,
+    .sgsh-btn-arrow {
+
+        transition: none !important;
+
+    }
+
+    .sgsh-doctor-badge {
+
+        animation: none !important;
+
+    }
+
+}
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.sgsh-services{
+    background:#f7fbff;
+}
+
+.sgsh-service-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:26px;
+}
+
+.sgsh-service-card{
+    background:rgba(255,255,255,.92);
+
+    padding:28px 24px 30px;
+
+    text-align:left;
+
+    border:1px solid #e6edf2;
+
+    border-radius:25px;
+
+    box-shadow:
+        0 8px 30px rgba(20,65,95,.07);
+
+    transition:.4s;
+
+    overflow:hidden;
+
+    position:relative;
+}
+
+.sgsh-service-card::before{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--blue),
+            var(--gold)
+        );
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s;
+}
+
+.sgsh-service-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 20px 45px rgba(20,65,95,.14);
+}
+
+.sgsh-service-card:hover::before{
+    transform:scaleX(1);
+}
+
+.sgsh-icon{
+    width:100%;
+    height:175px;
+
+    margin:0 0 22px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    background:#e8f5ef;
+}
+
+.sgsh-icon img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.6s;
+}
+
+.sgsh-service-card:hover .sgsh-icon img{
+    transform:scale(1.08);
+}
+
+.sgsh-service-card h3{
+    font-family:'Playfair Display',Georgia,serif;
+
+    color:var(--blue2);
+
+    font-size:24px;
+
+    margin:8px 0;
+}
+
+.sgsh-service-card p{
+    color:var(--muted);
+
+    font-size:15px;
+
+    margin-bottom:0;
+}
+
+
+/* =========================================================
+   TREATMENTS
+========================================================= */
+
+.sgsh-treatment-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:24px;
+}
+
+.sgsh-treatment{
+    padding:30px 32px;
+
+    border:1px solid #e3ece8;
+
+    border-left:5px solid var(--green);
+
+    background:
+        linear-gradient(
+            135deg,
+            #fbfffd,
+            #f4faf8
+        );
+
+    border-radius:18px;
+
+    transition:.3s;
+}
+
+.sgsh-treatment:hover{
+    transform:translateX(7px);
+
+    box-shadow:
+        0 12px 30px rgba(22,134,90,.1);
+}
+
+.sgsh-treatment h3{
+    font-family:'Playfair Display',Georgia,serif;
+
+    color:var(--blue2);
+
+    margin-top:0;
+}
+
+.sgsh-treatment p{
+    color:var(--muted);
+}
+
+
+/* =========================================================
+   WHY CHOOSE US
+========================================================= */
+
+.sgsh-why{
+    background:
+        linear-gradient(
+            135deg,
+            #083d7c,
+            #1267ad
+        );
+
+    color:#fff;
+
+    overflow:hidden;
+}
+
+.sgsh-why::before{
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+    height:450px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    right:-170px;
+    top:-170px;
+}
+
+.sgsh-why .sgsh-section-title h2,
+.sgsh-why .sgsh-section-title p{
+    color:#fff;
+}
+
+.sgsh-why-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:24px;
+}
+
+.sgsh-why-card{
+    text-align:center;
+
+    padding:25px 20px;
+
+    background:rgba(255,255,255,.09);
+
+    border:1px solid rgba(255,255,255,.14);
+
+    border-radius:24px;
+
+    backdrop-filter:blur(10px);
+
+    transition:.35s;
+}
+
+.sgsh-why-card:hover{
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,.14);
+}
+
+.sgsh-why-card .sgsh-icon{
+    width:150px;
+    height:115px;
+
+    margin:auto auto 18px;
+
+    background:#fff;
+}
+
+.sgsh-why-card h3{
+    color:#fff;
+
+    font-family:'Playfair Display',Georgia,serif;
+
+    font-size:23px;
+}
+
+.sgsh-why-card p{
+    color:rgba(255,255,255,.8);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.sgsh-cta{
+    padding:90px 20px;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at 15% 50%,
+            rgba(22,134,90,.13),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            135deg,
+            #edf9f2,
+            #fff8df
+        );
+}
+
+.sgsh-cta h2{
+    font-family:'Playfair Display',Georgia,serif;
+
+    color:var(--blue2);
+
+    font-size:clamp(34px,4vw,50px);
+
+    margin:0 0 10px;
+}
+
+.sgsh-cta p{
+    font-size:18px;
+
+    color:var(--muted);
+
+    margin-bottom:25px;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.sgsh-contact{
+    background:#f7fbfa;
+}
+
+.sgsh-contact-grid{
+    display:grid;
+
+    grid-template-columns:
+        .9fr
+        1.1fr;
+
+    gap:30px;
+}
+
+.sgsh-contact-box{
+    background:#fff;
+
+    padding:38px;
+
+    border:1px solid #e6eeee;
+
+    border-radius:26px;
+
+    box-shadow:
+        0 12px 35px rgba(20,65,95,.08);
+
+    transition:.4s;
+}
+
+.sgsh-contact-box:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 20px 45px rgba(20,65,95,.12);
+}
+
+.sgsh-contact-box h3{
+    font-family:'Playfair Display',Georgia,serif;
+
+    color:var(--blue2);
+
+    font-size:28px;
+
+    margin-top:0;
+}
+
+.sgsh-contact-item{
+    margin:20px 0;
+
+    padding:14px 0;
+
+    border-bottom:1px solid #edf1f2;
+}
+
+.sgsh-contact-item:last-child{
+    border-bottom:0;
+}
+
+.sgsh-contact-item strong{
+    color:var(--green);
+}
+
+.sgsh-contact-item a{
+    color:var(--blue);
+
+    font-weight:600;
+
+    text-decoration:none;
+}
+
+.sgsh-contact-item a:hover{
+    text-decoration:underline;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.sgsh-contact-form input,
+.sgsh-contact-form textarea,
+.sgsh-contact-form select{
+    width:100%;
+
+    padding:15px 16px;
+
+    margin-bottom:14px;
+
+    border:1px solid #dfe7eb;
+
+    border-radius:13px;
+
+    font:inherit;
+
+    outline:none;
+
+    background:#fbfdfd;
+
+    transition:.25s;
+}
+
+.sgsh-contact-form input:focus,
+.sgsh-contact-form textarea:focus,
+.sgsh-contact-form select:focus{
+    border-color:#4b91cf;
+
+    box-shadow:
+        0 0 0 4px rgba(13,79,156,.08);
+
+    background:#fff;
+}
+
+.sgsh-contact-form textarea{
+    min-height:140px;
+
+    resize:vertical;
+}
+
+.sgsh-contact-form button{
+    border:0;
+
+    cursor:pointer;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.sgsh-footer{
+    background:#0b2745;
+
+    color:#dbe8f2;
+
+    padding:55px 0 20px;
+}
+
+.sgsh-footer-grid{
+    display:grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr;
+
+    gap:45px;
+}
+
+.sgsh-footer h3{
+    color:#f0c64c;
+
+    font-family:'Playfair Display',Georgia,serif;
+
+    margin-bottom:15px;
+}
+
+.sgsh-footer p{
+    color:#dbe8f2;
+}
+
+.sgsh-footer a{
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.2s;
+}
+
+.sgsh-footer a:hover{
+    color:#f0c64c;
+}
+
+.sgsh-footer-bottom{
+    border-top:1px solid rgba(255,255,255,.14);
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    color:#a9bdcf;
+}
+
+
+/* =========================================================
+   FLOATING BUTTONS
+========================================================= */
+
+/* =========================================================
+   FLOATING BUTTONS
+========================================================= */
+
+.sgsh-floating {
+    position: fixed;
+    right: 22px;
+    bottom: 24px;
+
+    z-index: 999999;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    pointer-events: none;
+}
+
+.sgsh-floating a {
+    position: relative;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 23px;
+
+    pointer-events: auto;
+
+    border: 2px solid rgba(255,255,255,.8);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.20);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+    overflow: visible;
+}
+
+
+/* CALL */
+
+.sgsh-call {
+    background: linear-gradient(
+        135deg,
+        #1684e8,
+        #1264b7,
+        #0b4388
+    );
+
+    animation: sgshCallPulse 2.5s infinite;
+}
+
+
+/* WHATSAPP */
+
+.sgsh-whatsapp {
+    background: linear-gradient(
+        135deg,
+        #25d366,
+        #1aaa55,
+        #087d3d
+    );
+
+    animation: sgshWhatsappPulse 2.5s infinite;
+}
+
+
+/* ICON */
+
+.sgsh-floating i {
+    position: relative;
+    z-index: 2;
+
+    transition:
+        transform .35s ease;
+}
+
+.sgsh-floating a:hover i {
+    transform: scale(1.15) rotate(-8deg);
+}
+
+
+/* HOVER */
+
+.sgsh-floating a:hover {
+    transform: translateY(-5px) scale(1.1);
+
+    box-shadow:
+        0 18px 38px rgba(0,0,0,.28);
+}
+
+
+/* TOOLTIP */
+
+.sgsh-floating a[data-label]::after {
+
+    content: attr(data-label);
+
+    position: absolute;
+
+    right: 72px;
+    top: 50%;
+
+    transform:
+        translateY(-50%)
+        translateX(10px);
+
+    background: #102a43;
+
+    color: #fff;
+
+    padding: 8px 13px;
+
+    border-radius: 8px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease;
+}
+
+.sgsh-floating a[data-label]:hover::after {
+
+    opacity: 1;
+    visibility: visible;
+
+    transform:
+        translateY(-50%)
+        translateX(0);
+}
+
+
+/* CALL PULSE */
+
+@keyframes sgshCallPulse {
+
+    0%,100% {
+        box-shadow:
+            0 10px 25px rgba(18,100,183,.35);
+    }
+
+    50% {
+        box-shadow:
+            0 12px 30px rgba(18,100,183,.55),
+            0 0 0 8px rgba(18,100,183,.10);
+    }
+}
+
+
+/* WHATSAPP PULSE */
+
+@keyframes sgshWhatsappPulse {
+
+    0%,100% {
+        box-shadow:
+            0 10px 25px rgba(26,170,85,.35);
+    }
+
+    50% {
+        box-shadow:
+            0 12px 30px rgba(26,170,85,.55),
+            0 0 0 8px rgba(26,170,85,.10);
+    }
+}
+
+
+/* MOBILE */
+
+@media(max-width:600px) {
+
+    .sgsh-floating {
+        right: 14px;
+        bottom: 16px;
+        gap: 10px;
+    }
+
+    .sgsh-floating a {
+        width: 52px;
+        height: 52px;
+
+        font-size: 20px;
+    }
+
+    .sgsh-floating a[data-label]::after {
+        display: none;
+    }
+}
+
+
+/* SMALL MOBILE */
+
+@media(max-width:380px) {
+
+    .sgsh-floating {
+        right: 10px;
+        bottom: 12px;
+    }
+
+    .sgsh-floating a {
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+    }
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.sgsh-reveal{
+    opacity:0;
+
+    transform:translateY(35px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.sgsh-reveal.sgsh-show{
+    opacity:1;
+
+    transform:none;
+}
+
+.sgsh-delay-1{
+    transition-delay:.1s;
+}
+
+.sgsh-delay-2{
+    transition-delay:.2s;
+}
+
+.sgsh-delay-3{
+    transition-delay:.3s;
+}
+
+/* =========================================================
+   SERVICES - LEFT & RIGHT SCROLL ANIMATION
+========================================================= */
+
+.sgsh-service-card.sgsh-reveal{
+    opacity:0;
+    transform:translateX(-75px);
+    transition:
+        opacity .85s ease,
+        transform .85s cubic-bezier(.22,1,.36,1),
+        box-shadow .4s ease;
+}
+
+.sgsh-service-card.sgsh-reveal:nth-child(even){
+    transform:translateX(75px);
+}
+
+.sgsh-service-card.sgsh-reveal.sgsh-show{
+    opacity:1;
+    transform:translateX(0);
+}
+
+.sgsh-service-card.sgsh-reveal.sgsh-show:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(20,65,95,.14);
+}
+
+/* Stagger the cards for a smooth sequence */
+.sgsh-service-card:nth-child(1){transition-delay:.05s;}
+.sgsh-service-card:nth-child(2){transition-delay:.15s;}
+.sgsh-service-card:nth-child(3){transition-delay:.25s;}
+.sgsh-service-card:nth-child(4){transition-delay:.35s;}
+.sgsh-service-card:nth-child(5){transition-delay:.45s;}
+.sgsh-service-card:nth-child(6){transition-delay:.55s;}
+.sgsh-service-card:nth-child(7){transition-delay:.65s;}
+.sgsh-service-card:nth-child(8){transition-delay:.75s;}
+.sgsh-service-card:nth-child(9){transition-delay:.85s;}
+
+@media(max-width:600px){
+    .sgsh-service-card.sgsh-reveal{
+        transform:translateX(-40px);
+    }
+
+    .sgsh-service-card.sgsh-reveal:nth-child(even){
+        transform:translateX(40px);
+    }
+
+    .sgsh-service-card.sgsh-reveal.sgsh-show{
+        transform:translateX(0);
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:900px){
+
+    .sgsh-nav{
+        min-height:70px;
+
+        padding:8px 0;
+    }
+
+    .sgsh-logo img{
+        width:155px;
+
+        max-height:55px;
+    }
+
+    .sgsh-menu-toggle{
+        display:flex;
+
+        align-items:center;
+        justify-content:center;
+
+        width:45px;
+        height:45px;
+
+        font-size:27px;
+
+        border-radius:12px;
+
+        background:#f1f7fc;
+    }
+
+    .sgsh-menu{
+        display:none;
+
+        position:absolute;
+
+        top:70px;
+        left:0;
+
+        width:100%;
+
+        background:rgba(255,255,255,.98);
+
+        backdrop-filter:blur(20px);
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        padding:15px;
+
+        gap:5px;
+
+        box-shadow:
+            0 18px 35px rgba(0,0,0,.12);
+
+        border-top:1px solid #edf2f5;
+
+        animation:mobileMenu .3s ease;
+    }
+
+    .sgsh-menu.active{
+        display:flex;
+    }
+
+    .sgsh-menu a{
+        width:100%;
+
+        text-align:center;
+
+        padding:13px 15px;
+    }
+
+    .sgsh-menu .sgsh-btn{
+        margin-top:7px;
+
+        padding:14px !important;
+    }
+
+    @keyframes mobileMenu{
+
+        from{
+            opacity:0;
+
+            transform:translateY(-10px);
+        }
+
+        to{
+            opacity:1;
+
+            transform:translateY(0);
+        }
+    }
+
+
+    /* HERO */
+
+    .sgsh-hero{
+        padding:65px 0 55px;
+    }
+
+    .sgsh-hero-content{
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+        text-align:center;
+    }
+
+    .sgsh-small-title{
+        font-size:11px;
+
+        letter-spacing:1.3px;
+    }
+
+    .sgsh-hero h1{
+        font-size:clamp(40px,11vw,55px);
+
+        line-height:1.05;
+
+        margin:17px 0;
+    }
+
+    .sgsh-hero p{
+        font-size:16px;
+
+        line-height:1.75;
+
+        margin:auto;
+    }
+
+    .sgsh-hero-buttons{
+        justify-content:center;
+
+        margin-top:25px;
+    }
+
+    .sgsh-hero-buttons .sgsh-btn{
+        width:100%;
+
+        max-width:330px;
+    }
+
+    .sgsh-hero-image img{
+        max-width:560px;
+    }
+
+
+    /* ABOUT */
+
+    .sgsh-about-grid{
+        grid-template-columns:1fr;
+
+        gap:40px;
+    }
+
+
+    /* SERVICES */
+
+    .sgsh-service-grid{
+        grid-template-columns:repeat(2,1fr);
+
+        gap:18px;
+    }
+
+
+    /* WHY */
+
+    .sgsh-why-grid{
+        grid-template-columns:repeat(2,1fr);
+
+        gap:18px;
+    }
+
+
+    /* CONTACT */
+
+    .sgsh-contact-grid{
+        grid-template-columns:1fr;
+    }
+
+
+    /* FOOTER */
+
+    .sgsh-footer-grid{
+        grid-template-columns:1fr 1fr;
+
+        gap:30px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:600px){
+
+    .sgsh-container{
+        width:91%;
+    }
+
+
+    /* HEADER */
+
+    .sgsh-logo img{
+        width:140px;
+    }
+
+    .sgsh-menu-toggle{
+        width:42px;
+        height:42px;
+
+        font-size:25px;
+    }
+
+
+    /* HERO */
+
+    .sgsh-hero{
+        padding:50px 0 45px;
+    }
+
+    .sgsh-hero h1{
+        font-size:42px;
+    }
+
+    .sgsh-hero p{
+        font-size:15px;
+    }
+
+    .sgsh-hero-image img{
+        border-radius:22px;
+    }
+
+
+    /* SECTION */
+
+    .sgsh-section{
+        padding:55px 0;
+    }
+
+    .sgsh-section-title{
+        margin-bottom:38px;
+    }
+
+    .sgsh-section-title h2{
+        font-size:32px;
+    }
+
+    .sgsh-section-title p{
+        font-size:14px;
+    }
+
+
+    /* ABOUT */
+
+    .sgsh-about-image::after{
+        right:-10px;
+
+        bottom:-10px;
+
+        left:10px;
+
+        border-radius:23px;
+    }
+
+    .sgsh-about-image img{
+        max-height:430px;
+
+        border-radius:23px;
+    }
+
+    .sgsh-about-text h3{
+        font-size:27px;
+
+        line-height:1.25;
+    }
+
+    .sgsh-about-text p{
+        font-size:15px;
+    }
+
+    .sgsh-check{
+        font-size:14px;
+    }
+
+
+    /* DOCTOR */
+
+    .sgsh-doctor-card{
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+        padding:27px 18px;
+
+        text-align:center;
+
+        border-radius:25px;
+    }
+
+    .sgsh-doctor-photo{
+        width:155px;
+        height:155px;
+
+        font-size:52px;
+    }
+
+    .sgsh-doctor-info h3{
+        font-size:25px;
+
+        line-height:1.25;
+    }
+
+    .sgsh-doctor-info p{
+        font-size:14px;
+    }
+
+
+    /* SERVICES */
+
+    .sgsh-service-grid{
+        grid-template-columns:1fr;
+
+        gap:18px;
+    }
+
+    .sgsh-service-card{
+        padding:18px;
+
+        border-radius:20px;
+    }
+
+    .sgsh-icon{
+        height:190px;
+    }
+
+    .sgsh-service-card h3{
+        font-size:22px;
+    }
+
+    .sgsh-service-card p{
+        font-size:14px;
+    }
+
+
+    /* TREATMENTS */
+
+    .sgsh-treatment-grid{
+        grid-template-columns:1fr;
+
+        gap:16px;
+    }
+
+    .sgsh-treatment{
+        padding:23px 20px;
+
+        border-left-width:4px;
+
+        border-radius:16px;
+    }
+
+    .sgsh-treatment h3{
+        font-size:23px;
+    }
+
+    .sgsh-treatment p{
+        font-size:14px;
+    }
+
+
+    /* WHY */
+
+    .sgsh-why{
+        padding:55px 0;
+    }
+
+    .sgsh-why-grid{
+        grid-template-columns:1fr;
+
+        gap:18px;
+    }
+
+    .sgsh-why-card{
+        padding:20px;
+
+        border-radius:20px;
+    }
+
+    .sgsh-why-card .sgsh-icon{
+        width:100%;
+
+        height:150px;
+
+        margin-bottom:14px;
+    }
+
+    .sgsh-why-card h3{
+        font-size:22px;
+    }
+
+    .sgsh-why-card p{
+        font-size:14px;
+    }
+
+
+    /* CTA */
+
+    .sgsh-cta{
+        padding:65px 20px;
+    }
+
+    .sgsh-cta h2{
+        font-size:31px;
+
+        line-height:1.2;
+    }
+
+    .sgsh-cta p{
+        font-size:15px;
+    }
+
+    .sgsh-cta .sgsh-btn{
+        width:100%;
+
+        max-width:320px;
+    }
+
+
+    /* CONTACT */
+
+    .sgsh-contact-box{
+        padding:22px 17px;
+
+        border-radius:22px;
+    }
+
+    .sgsh-contact-box h3{
+        font-size:26px;
+    }
+
+    .sgsh-contact-item{
+        font-size:14px;
+
+        line-height:1.7;
+    }
+
+    .sgsh-contact-form input,
+    .sgsh-contact-form textarea,
+    .sgsh-contact-form select{
+        padding:14px;
+
+        font-size:14px;
+    }
+
+    .sgsh-contact-form button{
+        width:100%;
+    }
+
+
+    /* FOOTER */
+
+    .sgsh-footer{
+        padding:45px 0 20px;
+    }
+
+    .sgsh-footer-grid{
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+        text-align:center;
+    }
+
+    .sgsh-footer h3{
+        font-size:23px;
+    }
+
+    .sgsh-footer p{
+        font-size:14px;
+    }
+
+    .sgsh-footer-bottom{
+        font-size:12px;
+
+        line-height:1.6;
+    }
+
+
+    /* FLOATING */
+
+    .sgsh-floating{
+        right:13px;
+
+        bottom:13px;
+
+        gap:9px;
+    }
+
+    .sgsh-floating a{
+        width:48px;
+        height:48px;
+
+        font-size:21px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media(max-width:380px){
+
+    .sgsh-hero h1{
+        font-size:36px;
+    }
+
+    .sgsh-section-title h2{
+        font-size:29px;
+    }
+
+    .sgsh-doctor-info h3{
+        font-size:23px;
+    }
+
+    .sgsh-hero-buttons .sgsh-btn,
+    .sgsh-cta .sgsh-btn{
+        max-width:100%;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+    }
+
+    .sgsh-reveal{
+        opacity:1;
+
+        transform:none;
+    }
+}
+
+
+/* =========================================================
+   PREMIUM FIXED HEADER + SCROLL SHRINK ANIMATION
+   Added for a smooth glassmorphism header effect
+========================================================= */
+
+.sgsh-header{
+    position:fixed !important;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(13,79,156,.08);
+
+    box-shadow:0 8px 30px rgba(20,60,90,.06);
+
+    transition:
+        background .45s ease,
+        backdrop-filter .45s ease,
+        -webkit-backdrop-filter .45s ease,
+        box-shadow .45s ease;
+}
+
+.sgsh-nav{
+    min-height:82px;
+
+    transition:
+        min-height .45s cubic-bezier(.22,1,.36,1),
+        padding .45s ease;
+}
+
+/* Scrolled state */
+.sgsh-header.sgsh-scrolled{
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(24px);
+    -webkit-backdrop-filter:blur(24px);
+
+    border-bottom:1px solid rgba(13,79,156,.12);
+
+    box-shadow:
+        0 10px 35px rgba(20,60,90,.12);
+}
+
+.sgsh-header.sgsh-scrolled .sgsh-nav{
+    min-height:68px;
+}
+
+/* Logo smoothly becomes smaller */
+.sgsh-logo img{
+    transition:
+        width .45s cubic-bezier(.22,1,.36,1),
+        max-height .45s cubic-bezier(.22,1,.36,1),
+        transform .35s ease,
+        opacity .45s ease;
+}
+
+.sgsh-header.sgsh-scrolled .sgsh-logo img{
+    width:175px;
+    max-height:58px;
+}
+
+/* Premium animated line under header */
+.sgsh-header::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:-1px;
+
+    width:0;
+    height:2px;
+
+    background:linear-gradient(
+        90deg,
+        var(--green),
+        var(--blue),
+        var(--gold)
+    );
+
+    transform:translateX(-50%);
+
+    transition:
+        width .6s cubic-bezier(.22,1,.36,1);
+}
+
+.sgsh-header.sgsh-scrolled::after{
+    width:100%;
+}
+
+/* Fixed header spacing */
+.sgsh-hero{
+    padding-top:187px;
+}
+
+/* Tablet */
+@media(max-width:900px){
+
+    .sgsh-header.sgsh-scrolled .sgsh-nav{
+        min-height:64px;
+    }
+
+    .sgsh-header.sgsh-scrolled .sgsh-logo img{
+        width:140px;
+        max-height:50px;
+    }
+
+    .sgsh-hero{
+        padding-top:135px;
+    }
+
+    .sgsh-menu{
+        top:70px;
+    }
+
+    .sgsh-header.sgsh-scrolled ~ * .sgsh-menu{
+        top:64px;
+    }
+}
+
+/* Mobile */
+@media(max-width:600px){
+
+    .sgsh-header{
+        background:rgba(255,255,255,.95);
+    }
+
+    .sgsh-header.sgsh-scrolled{
+        background:rgba(255,255,255,.76);
+    }
+
+    .sgsh-nav{
+        min-height:70px;
+    }
+
+    .sgsh-header.sgsh-scrolled .sgsh-nav{
+        min-height:60px;
+    }
+
+    .sgsh-logo img{
+        width:140px;
+        max-height:52px;
+    }
+
+    .sgsh-header.sgsh-scrolled .sgsh-logo img{
+        width:122px;
+        max-height:46px;
+    }
+
+    .sgsh-hero{
+        padding-top:120px;
+    }
+
+    .sgsh-menu{
+        top:70px;
+    }
+
+    .sgsh-header.sgsh-scrolled .sgsh-menu{
+        top:60px;
+    }
+}
+
+/* Very small phones */
+@media(max-width:380px){
+
+    .sgsh-header.sgsh-scrolled .sgsh-logo img{
+        width:115px;
+    }
+}
+
+/* Accessibility */
+@media(prefers-reduced-motion:reduce){
+
+    .sgsh-header,
+    .sgsh-nav,
+    .sgsh-logo img,
+    .sgsh-header::after{
+        transition:none !important;
+    }
+}
+/* =====================================================
+   FOOTER LOGO
+===================================================== */
+
+.sgsh-footer-brand {
+    position: relative;
+}
+
+.sgsh-footer-logo {
+    width: 150px;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 18px;
+    transition: all 0.4s ease;
+}
+
+/* Logo hover animation */
+
+.sgsh-footer-logo:hover {
+    transform: translateY(-5px) scale(1.04);
+}
+
+
+/* Footer heading */
+
+.sgsh-footer-brand h3 {
+    margin-top: 0;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .sgsh-footer-logo {
+        width: 130px;
+        max-height: 85px;
+        margin-bottom: 15px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="sgsh-site">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="sgsh-header">
+
+    <div class="sgsh-container sgsh-nav">
+
+        <div class="sgsh-logo">
+
+            <a href="#home">
+
+                <img
+                    src="images/logo2.jpeg"
+                    alt="Sri Gayathri Skin Care Hospital"
+                >
+
+            </a>
+
+        </div>
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <div
+            class="sgsh-menu-toggle"
+            onclick="sgshMenu()"
+            aria-label="Open Menu"
+        >
+            ☰
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sgsh-menu" id="sgshMenu">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#doctor">
+                Doctor
+            </a>
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#treatments">
+                Treatments
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+            <a
+                class="sgsh-btn"
+                href="#contact"
+            >
+                Book Appointment
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    class="sgsh-hero"
+    id="home"
+>
+
+    <div class="sgsh-container sgsh-hero-content">
+
+
+        <div>
+
+            <div class="sgsh-small-title">
+
+                Sri Gayathri Skin Care Hospital
+
+            </div>
+
+
+            <h1>
+
+                Healthy Skin.
+
+                <br>
+
+                <span>
+                    Confident You.
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                Personalized dermatological solutions designed
+                to address your unique skin, hair, and cosmetic
+                concerns. We combine modern technology, expert
+                care, and individualized treatment plans to
+                deliver safe, effective, and natural-looking
+                results—helping you achieve healthier skin,
+                beautiful hair, and lasting confidence.
+
+            </p>
+
+
+            <div class="sgsh-hero-buttons">
+
+                <a
+                    href="#contact"
+                    class="sgsh-btn"
+                >
+                    Book Appointment
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="sgsh-hero-image">
+
+            <img
+                src="images/home.jpg"
+                alt="Skin Care"
+            >
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    class="sgsh-section sgsh-about"
+    id="about"
+>
+
+    <div class="sgsh-container">
+
+
+        <div class="sgsh-section-title">
+
+            <h2>
+
+                About
+
+                <span>
+                    Our Hospital
+                </span>
+
+            </h2>
+
+            <p>
+                Dedicated to professional skin, hair and
+                cosmetic care.
+            </p>
+
+        </div>
+
+
+        <div class="sgsh-about-grid">
+
+
+            <div class="sgsh-about-image">
+
+                <img
+                    src="images/home2.jpg"
+                    alt="Sri Gayathri Skin Care Hospital"
+                >
+
+            </div>
+
+
+            <div class="sgsh-about-text">
+
+                <h3>
+                    Expert Care for Your Skin & Hair
+                </h3>
+
+
+                <p>
+
+                    Sri Gayathri Skin Care Hospital provides
+                    professional dermatological consultation
+                    and personalized care for various skin,
+                    hair and cosmetic concerns.
+
+                </p>
+
+
+                <div class="sgsh-check">
+
+                    <span>✓</span>
+
+                    Personalized treatment
+
+                </div>
+
+
+                <div class="sgsh-check">
+
+                    <span>✓</span>
+
+                    Professional dermatology care
+
+                </div>
+
+
+                <div class="sgsh-check">
+
+                    <span>✓</span>
+
+                    Modern treatment approach
+
+                </div>
+
+
+                <div class="sgsh-check">
+
+                    <span>✓</span>
+
+                    Patient-focused environment
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DOCTOR
+===================================================== -->
+
+<section
+    class="sgsh-section sgsh-doctor-section"
+    id="doctor"
+>
+
+    <div class="sgsh-container">
+
+        <!-- Section Heading -->
+        <div class="sgsh-section-title sgsh-doctor-heading">
+
+            <span class="sgsh-eyebrow">
+                ✦ Meet Our Specialist
+            </span>
+
+            <h2>
+                Meet Our
+                <span>Dermatologist</span>
+            </h2>
+
+            <p>
+                Expert dermatological care with a
+                personalized approach to healthy,
+                beautiful skin and hair.
+            </p>
+
+        </div>
+
+
+        <!-- Doctor Card -->
+        <div class="sgsh-doctor-card">
+
+            <!-- Decorative Background -->
+            <div class="sgsh-doctor-glow"></div>
+
+
+            <!-- Doctor Image -->
+            <div class="sgsh-doctor-photo-wrap">
+
+                <div class="sgsh-doctor-photo-bg"></div>
+
+                <div class="sgsh-doctor-photo">
+
+                    <img
+                        src="images/doctor.jpeg"
+                        alt="Dr. K. Manisha Chinmaye-Dermatologist"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <!-- Specialist Badge -->
+                <div class="sgsh-doctor-badge">
+
+                    <span class="sgsh-badge-icon">
+                        ✓
+                    </span>
+
+                    <div>
+                        <strong>Skin Specialist</strong>
+                        <small>Dermatology Care</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Doctor Information -->
+            <div class="sgsh-doctor-info">
+
+                <span class="sgsh-doctor-label">
+                    DERMATOLOGIST & COSMETOLOGY
+                </span>
+
+
+                <h4>
+                    Dr. K. Manisha Chinmaye
+                </h4>
+
+
+                <div class="sgsh-doctor-degree">
+
+                    <span>MBBS,MD (DVL)</span>
+
+                    <!-- <span class="sgsh-degree-line"></span> -->
+
+                    <!-- <span>MD (DVL)</span> -->
+
+                </div>
+
+
+                <p class="sgsh-doctor-speciality">
+
+                    Dermatology, Skin, Hair & Cosmetic Care
+
+                </p>
+
+
+                <p class="sgsh-doctor-description">
+
+                    Providing professional consultation and
+                    personalized treatment for a wide range
+                    of dermatological concerns, with a focus
+                    on healthy skin, hair and cosmetic care.
+
+                </p>
+
+
+                <!-- Highlights -->
+                <div class="sgsh-doctor-highlights">
+
+                    <div class="sgsh-doctor-highlight">
+
+                        <span class="sgsh-highlight-icon">
+                            ✦
+                        </span>
+
+                        <div>
+                            <strong>Personalized Care</strong>
+                            <small>Individual treatment approach</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="sgsh-doctor-highlight">
+
+                        <span class="sgsh-highlight-icon">
+                            ♡
+                        </span>
+
+                        <div>
+                            <strong>Patient Focused</strong>
+                            <small>Comfort & care first</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Button -->
+                <a
+                    href="#contact"
+                    class="sgsh-btn sgsh-doctor-btn"
+                >
+
+                    <span>
+                        Book Consultation
+                    </span>
+
+                    <span class="sgsh-btn-arrow">
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section
+    class="sgsh-section sgsh-services"
+    id="services"
+>
+
+    <div class="sgsh-container">
+
+
+        <div class="sgsh-section-title">
+
+            <h2>
+
+                Our
+
+                <span>
+                    Services
+                </span>
+
+            </h2>
+
+            <p>
+                Comprehensive care for skin, hair and
+                cosmetic concerns.
+            </p>
+
+        </div>
+
+
+        <div class="sgsh-service-grid">
+
+
+            <!-- SERVICE 1 -->
+
+            <div class="sgsh-service-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/acne.jpeg"
+                        alt="Acne and Pimples"
+                    >
+
+                </div>
+
+                <h3>
+                    Acne & Pimples
+                </h3>
+
+                <p>
+                    Professional care for acne, pimples
+                    and related skin concerns.
+                </p>
+
+            </div>
+
+
+            <!-- SERVICE 2 -->
+
+            <div class="sgsh-service-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/pigmentation.jpeg"
+                        alt="Pigmentation"
+                    >
+
+                </div>
+
+                <h3>
+                    Pigmentation
+                </h3>
+
+                <p>
+                    Consultation and treatment for
+                    pigmentation and uneven skin tone.
+                </p>
+
+            </div>
+
+
+            <!-- SERVICE 3 -->
+
+            <div class="sgsh-service-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/hair  problems.jpeg"
+                        alt="Hair and Scalp"
+                    >
+
+                </div>
+
+                <h3>
+                    Hair & Scalp
+                </h3>
+
+                <p>
+                    Care for hair fall, scalp conditions
+                    and other hair concerns.
+                </p>
+
+            </div>
+
+
+            <!-- SERVICE 4 -->
+
+            <div class="sgsh-service-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/cosmotic.jpeg"
+                        alt="Cosmetic Care"
+                    >
+
+                </div>
+
+                <h3>
+                    Cosmetic Care
+                </h3>
+
+                <p>
+                    Professional cosmetic dermatology and
+                    skin rejuvenation services.
+                </p>
+
+            </div>
+
+
+            <!-- SERVICE 5 -->
+
+            <div class="sgsh-service-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/skin allergies.jpeg"
+                        alt="Skin Allergies"
+                    >
+
+                </div>
+
+                <h3>
+                    Skin Allergies
+                </h3>
+
+                <p>
+                    Evaluation and treatment guidance
+                    for various skin allergies.
+                </p>
+
+            </div>
+
+
+            <!-- SERVICE 6 -->
+
+            <div class="sgsh-service-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/skin infection.jpeg"
+                        alt="Skin Infection"
+                    >
+
+                </div>
+
+                <h3>
+                    Skin Infections
+                </h3>
+
+                <p>
+                    Professional diagnosis and treatment
+                    for common skin infections.
+                </p>
+
+            </div>
+
+
+            <!-- SERVICE 7 -->
+
+            <div class="sgsh-service-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/acne scars.jpeg"
+                        alt="Acne Scars"
+                    >
+
+                </div>
+
+                <h3>
+                    Acne Scars
+                </h3>
+
+                <p>
+                    Treatment options for improving the
+                    appearance of acne scars.
+                </p>
+
+            </div>
+
+
+            <!-- SERVICE 8 -->
+
+            <div class="sgsh-service-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/hairproblem.jpg"
+                        alt="Hair Problems"
+                    >
+
+                </div>
+
+                <h3>
+                    Hair Problems
+                </h3>
+
+                <p>
+                    Personalized consultation for common
+                    hair and scalp problems.
+                </p>
+
+            </div>
+
+
+            <!-- SERVICE 9 -->
+
+            <div class="sgsh-service-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/skin  rejuvention.jpeg"
+                        alt="Skin Rejuvenation"
+                    >
+
+                </div>
+
+                <h3>
+                    Skin Rejuvenation
+                </h3>
+
+                <p>
+                    Skin-care solutions focused on
+                    healthier-looking skin.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TREATMENTS
+===================================================== -->
+
+<section
+    class="sgsh-section"
+    id="treatments"
+>
+
+    <div class="sgsh-container">
+
+
+        <div class="sgsh-section-title">
+
+            <h2>
+
+                Skin & Hair
+
+                <span>
+                    Treatments
+                </span>
+
+            </h2>
+
+            <p>
+                Personalized treatment plans based on
+                individual skin and hair needs.
+            </p>
+
+        </div>
+
+
+        <div class="sgsh-treatment-grid">
+
+
+            <div class="sgsh-treatment">
+
+                <h3>
+                    Acne Treatment
+                </h3>
+
+                <p>
+                    Professional evaluation and
+                    personalized treatment options
+                    for acne and pimples.
+                </p>
+
+            </div>
+
+
+            <div class="sgsh-treatment">
+
+                <h3>
+                    Pigmentation Care
+                </h3>
+
+                <p>
+                    Appropriate dermatological care
+                    for pigmentation and uneven skin tone.
+                </p>
+
+            </div>
+
+
+            <div class="sgsh-treatment">
+
+                <h3>
+                    Hair Fall & Scalp Care
+                </h3>
+
+                <p>
+                    Consultation and treatment guidance
+                    for hair fall and scalp-related concerns.
+                </p>
+
+            </div>
+
+
+            <div class="sgsh-treatment">
+
+                <h3>
+                    Cosmetic Dermatology
+                </h3>
+
+                <p>
+                    Professional cosmetic skin-care
+                    services designed around individual
+                    requirements.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHY CHOOSE US
+===================================================== -->
+
+<section
+    class="sgsh-section sgsh-why"
+>
+
+    <div class="sgsh-container">
+
+
+        <div class="sgsh-section-title">
+
+            <h2>
+                Why Choose Us?
+            </h2>
+
+            <p>
+                Professional care with a patient-first
+                approach.
+            </p>
+
+        </div>
+
+
+        <div class="sgsh-why-grid">
+
+
+            <div class="sgsh-why-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/expert care.jpg"
+                        alt="Expert Care"
+                    >
+
+                </div>
+
+                <h3>
+                    Expert Care
+                </h3>
+
+                <p>
+                    Professional dermatology consultation.
+                </p>
+
+            </div>
+
+
+            <div class="sgsh-why-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/modren approach.jpg"
+                        alt="Modern Approach"
+                    >
+
+                </div>
+
+                <h3>
+                    Modern Approach
+                </h3>
+
+                <p>
+                    Contemporary skin and hair treatment
+                    options.
+                </p>
+
+            </div>
+
+
+            <div class="sgsh-why-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/patient focused.jpg"
+                        alt="Patient Focused"
+                    >
+
+                </div>
+
+                <h3>
+                    Patient Focused
+                </h3>
+
+                <p>
+                    Personalized care for every patient.
+                </p>
+
+            </div>
+
+
+            <div class="sgsh-why-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/quality care.jpg"
+                        alt="Quality Care"
+                    >
+
+                </div>
+
+                <h3>
+                    Quality Care
+                </h3>
+
+                <p>
+                    Focus on professional and responsible care.
+                </p>
+
+            </div>
+
+
+            <div class="sgsh-why-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/clean environment.jpg"
+                        alt="Clean Environment"
+                    >
+
+                </div>
+
+                <h3>
+                    Clean Environment
+                </h3>
+
+                <p>
+                    A comfortable and hygienic environment.
+                </p>
+
+            </div>
+
+
+            <div class="sgsh-why-card">
+
+                <div class="sgsh-icon">
+
+                    <img
+                        src="images/trusted support.avif"
+                        alt="Trusted Support"
+                    >
+
+                </div>
+
+                <h3>
+                    Trusted Support
+                </h3>
+
+                <p>
+                    Guidance throughout your treatment journey.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="sgsh-cta">
+
+    <div class="sgsh-container">
+
+        <h2>
+            Give Your Skin the Care It Deserves
+        </h2>
+
+        <p>
+            Take the first step towards professional
+            skin and hair care.
+        </p>
+
+        <a
+            href="#contact"
+            class="sgsh-btn"
+        >
+            Book an Appointment
+        </a>
+
+    </div>
+
+</section>
+<section>
+<div class="sgsh-floating">
+
+    <a
+        href="tel:+919XXXXXXXXX"
+        class="sgsh-call"
+        data-label="Call Us"
+        aria-label="Call Us"
+    >
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <a
+        href="https://wa.me/91XXXXXXXXXX"
+        class="sgsh-whatsapp"
+        data-label="Chat on WhatsApp"
+        aria-label="WhatsApp"
+        target="_blank"
+        rel="noopener"
+    >
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</div>
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+    class="sgsh-section sgsh-contact"
+    id="contact"
+>
+
+    <div class="sgsh-container">
+
+
+        <div class="sgsh-section-title">
+
+            <h2>
+
+                Contact
+
+                <span>
+                    Us
+                </span>
+
+            </h2>
+
+            <p>
+                Get in touch with Sri Gayathri Skin Care Hospital.
+            </p>
+
+        </div>
+
+
+        <div class="sgsh-contact-grid">
+
+
+            <!-- INFORMATION -->
+
+            <div class="sgsh-contact-box">
+
+                <h3>
+                    Hospital Information
+                </h3>
+
+
+                <div class="sgsh-contact-item">
+
+                    <strong>
+                        📍 Address
+                    </strong>
+
+                    <br>
+
+                    Syamala Theatre Street,
+
+                    <br>
+
+                    Near Manyam Electricals,
+
+                    <br>
+
+                    T. Nagar, Kotipalli Bus Stand,
+
+                    <br>
+
+                    Rajahmundry, Andhra Pradesh
+
+                </div>
+
+
+                <div class="sgsh-contact-item">
+
+                    <strong>
+                        📞 Phone
+                    </strong>
+
+                    <br>
+
+                    <a href="tel:9848444578">
+                        9848444578
+                    </a>
+
+                </div>
+
+
+                <div class="sgsh-contact-item">
+
+                    <strong>
+                        💬 WhatsApp
+                    </strong>
+
+                    <br>
+
+                    <a
+                        href="https://wa.me/919848444578"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Chat on WhatsApp
+                    </a>
+
+                </div>
+
+
+                <div class="sgsh-contact-item">
+
+                    <strong>
+                        🏥 Registration No.
+                    </strong>
+
+                    <br>
+
+                    109289
+
+                </div>
+
+            </div>
+
+
+            <!-- APPOINTMENT FORM -->
+
+            <div class="sgsh-contact-box">
+
+                <h3>
+                    Book an Appointment
+                </h3>
+
+
+                <form
+                    class="sgsh-contact-form"
+                    onsubmit="sgshSubmit(event)"
+                >
+
+
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        required
+                    >
+
+
+                    <input
+                        type="tel"
+                        placeholder="Phone Number"
+                        required
+                    >
+
+
+                    <select required>
+
+                        <option value="">
+                            Select Service
+                        </option>
+
+                        <option>
+                            Acne & Pimples
+                        </option>
+
+                        <option>
+                            Pigmentation
+                        </option>
+
+                        <option>
+                            Hair & Scalp
+                        </option>
+
+                        <option>
+                            Cosmetic Care
+                        </option>
+
+                        <option>
+                            General Dermatology Consultation
+                        </option>
+
+                    </select>
+
+
+                    <input
+                        type="tel"
+                        placeholder="Preferred Date"
+                        onfocus="(this.type='date')"
+                        required
+                    >
+
+
+                    <textarea
+                        placeholder="Write your message"
+                    ></textarea>
+
+
+                    <button
+                        type="submit"
+                        class="sgsh-btn"
+                    >
+                        Request Appointment
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="sgsh-footer">
+
+    <div class="sgsh-container">
+
+        <div class="sgsh-footer-grid">
+
+            <!-- Hospital Info -->
+            <div class="sgsh-footer-brand">
+
+                <img
+                    src="images/logo2.jpeg"
+                    alt="Sri Gayathri Skin Care Hospital Logo"
+                    class="sgsh-footer-logo"
+                >
+
+                <h3>
+                    Sri Gayathri Skin Care Hospital
+                </h3>
+
+                <p>
+                    Professional skin, hair and cosmetic
+                    care with personalized attention.
+                </p>
+
+                <p>
+                    <strong>
+                        Regd. No. 109289
+                    </strong>
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <p>
+                    <a href="#home">Home</a>
+                </p>
+
+                <p>
+                    <a href="#about">About</a>
+                </p>
+
+                <p>
+                    <a href="#services">Services</a>
+                </p>
+
+                <p>
+                    <a href="#treatments">Treatments</a>
+                </p>
+
+                <p>
+                    <a href="#contact">Contact</a>
+                </p>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    📍 Rajahmundry, Andhra Pradesh
+                </p>
+
+                <p>
+                    📞
+                    <a href="tel:9848444578">
+                        9848444578
+                    </a>
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:srigayathriskinclinic@gmail.com">
+                        Email
+                    </a>
+                </p>
+
+                <p>
+                    <i class="fab fa-whatsapp"></i>
+                    <a
+                        href="https://wa.me/919848444578"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        WhatsApp
+                    </a>
+                </p>
+
+                <p>
+                    <i class="fab fa-instagram"></i>
+                    <a
+                        href="https://www.instagram.com/srigayathriskinclinic2026/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Instagram
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="sgsh-footer-bottom">
+
+            © 2026 Sri Gayathri Skin Care Hospital.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+function sgshMenu(){
+
+    const menu =
+        document.getElementById("sgshMenu");
+
+    menu.classList.toggle("active");
+
+}
+
+
+/* Close menu when clicking navigation link */
+
+document
+.querySelectorAll(".sgsh-menu a")
+.forEach(function(link){
+
+    link.addEventListener("click",function(){
+
+        document
+        .getElementById("sgshMenu")
+        .classList.remove("active");
+
+    });
+
+});
+
+
+
+/* =====================================================
+   APPOINTMENT FORM
+===================================================== */
+
+function sgshSubmit(event){
+
+    event.preventDefault();
+
+    alert(
+        "Thank you! Your appointment request has been received. Please call 9848444578 to confirm your appointment."
+    );
+
+}
+
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        const selectors = [
+
+            ".sgsh-section-title",
+
+            ".sgsh-about-image",
+
+            ".sgsh-about-text",
+
+            ".sgsh-doctor-card",
+
+            ".sgsh-service-card",
+
+            ".sgsh-treatment",
+
+            ".sgsh-why-card",
+
+            ".sgsh-contact-box",
+
+            ".sgsh-cta"
+
+        ];
+
+
+        const items = [];
+
+
+        selectors.forEach(function(selector){
+
+            document
+            .querySelectorAll(selector)
+            .forEach(function(element){
+
+                element.classList.add(
+                    "sgsh-reveal"
+                );
+
+                items.push(element);
+
+            });
+
+        });
+
+
+        const observer =
+            new IntersectionObserver(
+                function(entries){
+
+                    entries.forEach(
+                        function(entry){
+
+                            if(
+                                entry.isIntersecting
+                            ){
+
+                                entry.target
+                                .classList
+                                .add(
+                                    "sgsh-show"
+                                );
+
+                                observer
+                                .unobserve(
+                                    entry.target
+                                );
+
+                            }
+
+                        }
+                    );
+
+                },
+                {
+                    threshold:.12
+                }
+            );
+
+
+        items.forEach(
+            function(element,index){
+
+                if(index % 3 === 1){
+
+                    element.classList.add(
+                        "sgsh-delay-1"
+                    );
+
+                }
+
+                if(index % 3 === 2){
+
+                    element.classList.add(
+                        "sgsh-delay-2"
+                    );
+
+                }
+
+                observer.observe(element);
+
+            }
+        );
+
+    }
+);
+
+
+
+/* =====================================================
+   CLOSE MOBILE MENU WHEN CLICKING OUTSIDE
+===================================================== */
+
+document.addEventListener(
+    "click",
+    function(event){
+
+        const menu =
+            document.getElementById("sgshMenu");
+
+        const toggle =
+            document.querySelector(
+                ".sgsh-menu-toggle"
+            );
+
+
+        if(
+            window.innerWidth <= 900 &&
+            menu.classList.contains("active") &&
+            !menu.contains(event.target) &&
+            !toggle.contains(event.target)
+        ){
+
+            menu.classList.remove("active");
+
+        }
+
+    }
+);
+
+
+
+/* =====================================================
+   DATE FIELD — PREVENT OLD DATES
+===================================================== */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        const dateInput =
+            document.querySelector(
+                '.sgsh-contact-form input[type="date"]'
+            );
+
+
+        if(dateInput){
+
+            const today =
+                new Date()
+                .toISOString()
+                .split("T")[0];
+
+            dateInput.min = today;
+
+        }
+
+    }
+);
+
+
+
+/* =====================================================
+   PREMIUM HEADER SCROLL ANIMATION
+===================================================== */
+
+(function(){
+
+    const header = document.querySelector(".sgsh-header");
+
+    if(!header) return;
+
+    let ticking = false;
+
+    function updateHeader(){
+
+        if(window.scrollY > 40){
+
+            header.classList.add("sgsh-scrolled");
+
+        }else{
+
+            header.classList.remove("sgsh-scrolled");
+
+        }
+
+        ticking = false;
+    }
+
+    window.addEventListener("scroll", function(){
+
+        if(!ticking){
+
+            window.requestAnimationFrame(updateHeader);
+
+            ticking = true;
+        }
+
+    }, { passive:true });
+
+    updateHeader();
+
+})();
+
+
+</script>
+
+
+</div>
+
+</body>
+</html>
